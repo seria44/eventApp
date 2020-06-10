@@ -1,0 +1,10 @@
+
+/* ul 태그 */
+@media screen and (max-width:1100px){
+	.wrap{
+		width:100%;
+	}
+	.viewList{
+		width: 100%;
+	}
+}

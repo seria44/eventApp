@@ -1,0 +1,222 @@
+/* 검색 텍스트 */
+
+.searchText{
+	width: 150px; /* 원하는 너비 설정 */
+	height: auto; /* 높이값 초기화 */
+	line-height : normal; /* line-height 초기화 */
+	padding: .8em .5em;  /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+	border: 1px solid #999;
+	border-radius: 0; /* iSO 둥근모서리 제거 */
+	outline-style: none; /* 포커스시 발생하는 효과 제거를 원한다면 */
+	-webkit-appearance: none; /* 브라우저별 기본 스타일링 제거 */
+	-moz-appearance: none;
+	appearance: none;
+}
+
+select {
+
+ /*   width: 200px; /* 원하는 너비설정 */
+    padding: .8em .5em; /* 여백으로 높이 설정 */
+    font-family: inherit;  /* 폰트 상속 */
+/*    background: url('이미지 경로') no-repeat 95% 50%; /* 네이티브 화살표를 커스텀 화살표로 대체 */
+    border: 1px solid #999;
+    border-radius: 0px; /* iOS 둥근모서리 제거 */
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="checkbox"] { /* 실제 체크박스는 화면에서 숨김 */ 
+	position: absolute; 
+	width: 1px; 
+	height: 1px; 
+	padding: 0; 
+	margin: -1px; 
+	overflow: hidden; 
+	clip:rect(0,0,0,0); 
+	border: 0 
+} 
+input[type="checkbox"] + label {
+	 display: inline-block; 
+	 position: relative; 
+	 cursor: pointer; 
+	 -webkit-user-select: none; 
+	 -moz-user-select: none; 
+	 -ms-user-select: none; 
+} 
+input[type="checkbox"] + label:before { /* 가짜 체크박스 */ 
+	content: ' '; 
+	display: inline-block; 
+	width: 21px; /* 체크박스의 너비를 지정 */ 
+	height: 21px; /* 체크박스의 높이를 지정 */ 
+	line-height: 21px; /* 세로정렬을 위해 높이값과 일치 */ 
+	margin: -2px 8px 0 0; 
+	text-align: center; 
+	vertical-align: middle; 
+	background: #fafafa; 
+	border: 1px solid #cacece; 
+	border-radius : 3px; 
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+ }
+input[type="checkbox"] + label:active:before, .checks input[type="checkbox"]:checked + label:active:before { 
+	 box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1); 
+}
+
+input[type="checkbox"]:checked + label:before { /* 체크박스를 체크했을때 */ 
+	content: '\2714'; /* 체크표시 유니코드 사용 */ 
+	color: #99a1a7; 
+	text-shadow: 1px 1px #fff; 
+	background: #e9ecee; 
+	border-color: #adb8c0; 
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1); 
+}
+
+
+
+/* 검색 조건 버튼 */
+.h_btn_search{
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	width:auto;
+	line-height: 39px;
+	cursor: pointer;
+	float:right;
+	background-color: orange;
+	background:linear-gradient( to top, yellow, red );
+} 
+.h_btn_search span {
+	width: 40px; 
+	border-radius: 0%; 
+	text-align: center;  
+	color: #ffffff;
+	font-weight: bold;
+}
+
+
+/* 일반 검색 버튼*/
+.h_btn_search1{
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	width:auto;
+	line-height: 39px;
+	cursor: pointer;
+	float:right;
+	background-color: orange;
+} 
+.h_btn_search1 span {
+	width: 40px; 
+	border-radius: 0%; 
+	text-align: center;  
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* 일반 검색 버튼*/
+.h_btn_search2{
+	margin: 0 auto;
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width:auto;
+	line-height: 39px;
+	text-align: center;
+	cursor: pointer;
+	background-color: orange;
+} 
+.h_btn_search2 span {
+	width: 40px; 
+	border-radius: 0%; 
+	text-align: center;  
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* 메뉴버튼*/
+.h_btn_search3{
+	margin: 0 auto;
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width:auto;
+	line-height: 39px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 1em;
+	background-color: blue;
+} 
+.h_btn_search3 span {
+	width: 40px; 
+	border-radius: 0%; 
+	text-align: center;  
+	color: #ffffff;
+	font-weight: bold;
+}
+
+
+.h_btn_search111{
+	margin: 0 auto;
+	padding: 0  auto;
+	width:auto;
+	line-height: 40px;
+	cursor: pointer;
+	float:right;
+	background-color: orange;
+} 
+.h_btn_search111 span {
+	width: 40px; 
+	background-color: orange; 
+	border-radius: 0%; 
+	text-align: center; 
+	display: inline-block;  
+	border: 1px solid orange;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+
+
+/* 로그인 버튼 */
+.l_btn_search{
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	width:auto;
+	height: 78px;
+	cursor: pointer;
+	background-color: orange; 
+	
+} 
+.l_btn_search span {
+	clear: left;
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 70px;
+
+}
+/* 액션 버튼 */
+.s_btn2{
+	float:right;
+	width:50px;
+	height:25px;
+	background-color: orange;
+	border: 1px solid orange;
+	border-radius: 2em;
+}
+.s_btn2 span{
+	color:#ffffff;
+	margin-left:10px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.w100{
+	width:100px;
+}
+.w150{
+	width:150px;
+}
+.w200{
+	width:200px;
+}

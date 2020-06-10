@@ -1,0 +1,382 @@
+@font-face {
+	font-family: "NotoSansCJKkr";
+	src: url("fonts/NotoSansCJKkr-Regular.otf") format("opentype");
+}
+body{
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.wrap{
+	width:1100px;
+	height: auto;
+	margin:0 auto;
+	text-align:left; 
+}
+
+span{
+	cursor: pointer;
+/*	font-family: NotoSansCJKkr;
+*/
+}
+ul{
+	padding: 0;
+}
+
+li{
+	list-style-type: none;
+	float: left;
+}
+
+li .searchBar{
+	list-style-type: none;
+	float: left;
+}
+
+.h_header{
+	text-align: left;
+	width: 100vh;
+	display: inline-block;
+	margin:0 auto;
+}
+
+.h_mlogo{
+	float: left;
+	width: 240px;
+}
+
+.h_login{
+	float: right;
+	margin-top: -10px;
+}
+
+
+.h_searchBar{
+	margin: 0 auto;
+	width: auto;
+	padding-left: 400px;
+	padding-top:8px;
+	
+}
+
+/* 메뉴 */
+.h_menu{
+	clear: left;
+	width: 100%;
+	height:30px;
+	padding-top: 2px;
+}
+.h_menuUl{
+	clear: left;
+}
+
+.h_menuUl li{
+	font-weight: bold;
+	font-size: 1.5em;
+	color: gray;
+	margin: 0 auto;
+	margin-left: 5px;
+}
+
+/* 배너 */
+.b_benner{
+	margin: 0 auto;
+	padding-top: 20px;
+	position: absolute; 
+	z-index: 10;
+	left:0;
+	width: 100vw;
+	height:100px;
+	clear: left;
+}
+
+.contents_body{
+	margin-top: 120px;
+}
+.b_title{
+	width:100%;
+	height:30px;
+	text-align: left;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-weight: bold;
+	font-size: 17pt;
+}
+
+/* 메인 컨텐츠 영역 */
+.viewList{
+	width: 48%;
+	height:400px;
+	float: left;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	margin-left: 4px;
+	margin-bottom: 4px;
+}
+
+/* 메인 컨텐츠 영역 */
+.viewList span{
+	text-align: left;
+	color: blue;
+	font-weight: bold;
+}
+
+/* 그리드 타이틀 */
+.viewList .viewListTitle{
+	text-align: left;
+	color: blue;
+	font-weight: bold;
+	float: left;
+}
+
+/* 더보기 */
+.viewList .viewListSelect{
+	text-align: left;
+	color: blue;
+	font-weight: bold;
+	float: right;
+}
+/* 그리드 리스트  */
+.viewList .viewListBody{
+	margin-left: 10px;
+	padding-top: 3px;
+	clear: right;
+	width: 100%;
+}
+
+.viewListUl{
+	margin-top: 10px;
+}
+.viewListBody_list{
+	width: 94%;
+	clear: left;
+	list-style-type: none;
+	cursor: pointer;
+	padding-left: 5px;
+	padding-bottom: 15px;
+}
+
+.viewListBody_list .viewListBody_sub_title{
+	float: left;
+}
+.viewListBody_list .viewListBody_sub_text{
+	float: right;
+}
+.viewListBody_sub_img_view{
+	display: none;
+}
+
+.viewListBody_listLine{
+	clear: both;
+	width: 100%;
+	background-color: lightgray;
+	height: 1px;
+}
+
+/* 로그인 */
+.loginBox{
+	clear: left;
+	text-align: center;
+	width:500px;
+	height:300px;
+	margin: 0 auto 0 auto;
+	border-style: solid;
+	border-color: grey;
+	margin-top: 200px;
+
+}
+/* 로그인 */
+.Box{
+	margin: 0 auto 0 auto;
+	margin-top:100px;
+	width:300px;
+	text-align: center;
+	background-color: #ffffff;
+	
+}
+
+.ldSearch{
+	padding-top: 15px;
+	clear: both;
+	text-align: left;
+}
+
+/* 회원가입 */
+.memberBox{
+	width:500px;
+	margin: 0 auto;	
+	padding-top: 10px;
+	display: flex	;
+	align-items: center;
+}
+.mlabel{
+	clear: left;
+	float: left;
+	width:120px;
+	margin-top: 0px;
+	margin-bottom: 1px;
+	height: 38px;
+	display: flex	;
+	align-items: center;
+	border: 1px solid #dcdcdc;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.mlabelHid{
+	clear: left;
+	width:120px;
+	margin-top: 0px;
+	height: 38px;
+	border: 0px solid #dcdcdc;
+	font-weight: bold;
+}
+
+.mField{
+	float: left;
+	height:40px;
+	margin-top: 1px;
+	padding-left: 1px;
+	display: flex	;
+	align-items: center;
+
+}
+
+.mField span{
+	font-weight: bold;
+	font-size: 0.8em;
+	text-align: left;
+
+}
+
+.btnfield{
+	clear: left;
+	padding:10px 0 0 130px;
+}
+
+
+
+/* 팝업 div */
+.divPopup{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	background-color: rgba( 255, 255, 255, 0.5 );
+}
+
+.divPopup .body {
+	position: absolute;
+	margin: 0 auto;
+	padding: 0 auto;
+	left:50%;
+	top:50%;
+	width: 49%;
+	height: 49%;
+	transform: translate(-50%,-50%);
+	border: 0.5px solid orange;
+	background-color: white;
+	overflow: hidden;
+	text-align: left;
+}
+
+
+.memberSearLineBar{
+	clear: left;
+	width: 100%;
+	height:20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.8em;
+	text-align: left;
+	margin-left: 10px;
+	padding-top:10px;
+}
+
+
+.memberSearBoxBoader{
+	clear: left;
+	width: 100%;
+	border: 1px solid #dcdcdc;
+	text-align: center;
+}
+
+
+.searchChkAll{
+
+	color: rgb(46, 45, 45);
+	font-weight: bold;
+	font-size: 0.8em;
+	text-align: left;
+	margin-left: 0px;
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+.memberSearBox{
+	clear: left;
+	font-weight: bold;
+	font-size: 0.8em;
+	text-align: center;
+	margin-left: 0px;
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+.memberSearBox .mField1{
+	clear: left;
+}
+
+.divPopup .body .title{
+	width:100%;
+	height:10%;
+	text-align: right;	
+}
+.divPopup .body .title span{
+	margin-right: 3px;	
+}
+
+.divPopup .body .text{
+	font-size: 1em;
+	height: 80%;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.divPopup .body .bottom{
+	height: 10%;
+	text-align: center;
+}
+
+.black_overlay {
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+ }
+
+ .boader-list .title_list{
+ 	float:left;
+ 	width:10%;	
+ }
+  
+ .boader-list{
+ 	clear: left;
+ }
+ 
+ .boader-list ul{
+ 	clear: left;	
+ }
+
+ .boader-list li{
+ 	clear: left;
+ }
+
+ 
+ .boader-list .title_body{
+  	float:left;
+ 	width:20%;	
+ 	background-color: blue;
+ }
