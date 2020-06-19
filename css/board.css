@@ -1,0 +1,116 @@
+.title_body2 {
+	position: static;
+	float: left;
+	padding: 10px;
+	border-radius: 15px;
+	width: 900px;
+	height: 285px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+.title_list ul {
+	font-size: 1.5em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #f1f1f1;
+}
+
+li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+li a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+li a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+}
+/*서브(리스트)_페이지넘버*/
+.list_number {
+	padding-top: 400px;
+	text-align: center;
+}
+
+.list_n_menu {
+	padding: 3px;
+	MARGIN: 3px;
+	TEXT-ALIGN: center
+}
+
+.list_n_menu A {
+	padding: 5px 8px 4px 8px;
+	MARGIN: 2px;
+	BORDER: #ccc 1px solid;
+	COLOR: #999;
+	TEXT-DECORATION: none
+}
+
+.list_n_menu A:hover {
+	BORDER: #999 1px solid;
+	COLOR: #666;
+}
+
+.list_n_menu A:active {
+	BORDER: #999 1px solid;
+	COLOR: #666;
+}
+
+.list_n_menu .current {
+	BORDER: #117bff 1px solid;
+	padding: 5px 8px 4px 8px;
+	FONT-WEIGHT: bold;
+	MARGIN: 2px;
+	COLOR: #036cb4;
+}
+
+.list_n_menu .disabled {
+	BORDER: #eee 1px solid;
+	padding: 5px 8px 4px 8px;
+	MARGIN: 2px;
+	COLOR: #ddd;
+}
+
+
+/* 글목록 */
+.boardArticle table {width:720px}
+
+.boardArticle th {padding:5px 0;border-top:2px solid #666;border-bottom:1px solid #666}
+
+.boardArticle td {padding:8px 0;border-bottom:1px solid #666}
+.boardArticle .no {width:60px;text-align:center}
+.boardArticle .title {}
+.boardArticle .author {width:100px;text-align:center}
+.boardArticle .date {width:100px;text-align:center}
+.boardArticle .hit {width:40px;text-align:center}
+
+
+
+
+/* 글쓰기 */
+
+#boardWrite table {width:720px}
+#boardWrite th {width:100px;padding:5px;text-align:right;vertical-align: top}
+#boardWrite td {width:620px;padding:5px}
+
+#boardWrite #bID {width:180px}
+#boardWrite #bPassword {width:180px}
+#boardWrite #bTitle {width:400px}
+#boardWrite #bContent {width:550px;height:300px}
+
+#boardWrite .btnSet {text-align:center}
+
+
+/* 글읽기 */
+
+#boardView #boardTitle {border-bottom: 2px solid #333}
+#boardView #boardInfo {margin: 10px 0}
+#boardView #boardContent {margin: 10px 0}
